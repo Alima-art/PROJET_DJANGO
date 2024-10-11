@@ -1,0 +1,14 @@
+<!-- enregistrer_bien.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enregistrer un Bien</title>
+  </head>
+  <body>
+    <h1>Enregistrer un Bien</h1>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %} {{ form.as_p }}
+      <button type="submit">Enregistrer</button>
+    </form>
+  </body>
+</html>
